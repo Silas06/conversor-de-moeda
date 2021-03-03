@@ -87,7 +87,7 @@ const init = async () => {
 } 
 
 timeCurrencyOneEl.addEventListener('input', e => {
-  convertedValueEl.textContent = (e.target.value * internalExchangeRates.conversion_rates[currencyTwoEl.value]).toLocaleString('pt-BR',{style:'currency',currency:currencyTwo El.value})
+  convertedValueEl.textContent = (e.target.value * internalExchangeRates.conversion_rates[currencyTwoEl.value]).toLocaleString('pt-BR',{style:'currency',currency:currencyTwoEl.value})
 })
 
 currencyTwoEl.addEventListener('input', (e)=>{
